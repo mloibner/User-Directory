@@ -1,0 +1,1 @@
+//Ties whole app together, renders all components. state about results in here so that can sort and search as per requirements in readme.
