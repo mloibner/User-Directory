@@ -1,18 +1,20 @@
 //write JSX to render the html style and event listeners
 import React from "react";
+import "./style.css"
 
 export function Table(props) {
     return (
-    <container>
+    <container style={{textAlign: "center", }}>
     <div>
     <table>
-        <thead><tr>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Email</th>
-            <th>Username</th>
-
-        </tr></thead>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Username</th>
+            </tr>
+        </thead>
         <tbody>
         { props.users.map((user) => 
                 <tr key={user.id.value}>
