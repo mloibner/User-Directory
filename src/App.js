@@ -14,7 +14,7 @@ function App() {
   const [filteredUsers, setFilteredUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://randomuser.me/api/?results=20&nat=us").then((users) => {
+    axios.get("https://randomuser.me/api/?results=15&nat=us").then((users) => {
         setUsers(users.data.results);
         setFilteredUsers(users.data.results);
     }).catch(e => {

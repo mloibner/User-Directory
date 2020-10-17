@@ -2,10 +2,15 @@
 import React from "react";
 
 export function Table(props) {
-    return (<table>
+    return (
+    <container>
+    <div>
+    <table>
         <thead><tr>
             <th>Name</th>
             <th>Surname</th>
+            <th>Email</th>
+            <th>Username</th>
 
         </tr></thead>
         <tbody>
@@ -13,8 +18,12 @@ export function Table(props) {
                 <tr key={user.id.value}>
                     <td>{user.name.first}</td>
                     <td>{user.name.last}</td>
+                    <td>{user.email}</td>
+                    <td>{user.login.username}</td>
                 </tr>
         )}
         </tbody>
     </table>
+    </div>
+    </container>
 )};
