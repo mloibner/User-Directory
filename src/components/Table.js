@@ -9,7 +9,9 @@ export function Table(props) {
     <table className="table">
         <thead>
             <tr>
-                <th><button className="sortButton">Name</button></th>
+                <th>Name<button className="sortButton" onClick={
+                    (e) => {e.preventDefault(); 
+                    props.handleSortClick()}}>Sort Alphabetically</button></th>
                 <th>Surname</th>
                 <th>Email</th>
                 <th>Username</th>

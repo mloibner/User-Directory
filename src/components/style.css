@@ -5,6 +5,7 @@
     margin-top: 30px;
     display: table;
     border-collapse: collapse;
+    width: 550px;
 }
 
 table, th, td {
@@ -39,9 +40,17 @@ th {
     margin: 0 auto;
     display: block;
     padding: 10px 1px 10px 5px;
-    text-align: center;
+    width: 550px
 }
 
 .sortButton {
     color: salmon;
+    margin-left: 8px;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 4px
+}
+
+.sortButton:hover {
+    background-color: black;
 }
