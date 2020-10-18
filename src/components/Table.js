@@ -1,11 +1,12 @@
 //write JSX to render the html style and event listeners
 import React from "react";
+import "./style.css";
 
 export function Table(props) {
     return (
     <container>
     <div>
-    <table>
+    <table className="table">
         <thead><tr>
             <th>Name</th>
             <th>Surname</th>

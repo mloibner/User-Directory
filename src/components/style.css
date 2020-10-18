@@ -1,0 +1,12 @@
+.table {
+    position: fixed;
+    top: 50%;
+    left: 50%
+}
+
+.header {
+    text-align: center;
+    font-size: xx-large;
+    background-color: salmon;
+    padding: 50px;
+}
