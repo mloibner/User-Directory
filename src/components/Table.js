@@ -4,7 +4,7 @@ import "./style.css";
 
 export function Table(props) {
     return (
-    <container>
+    <container style={{textAlign: "center", }}>
     <div>
     <table className="table">
         <thead><tr>
