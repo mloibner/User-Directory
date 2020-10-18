@@ -2,7 +2,7 @@
 import axios from "axios";
 
 export function getUsers() {
-    return axios.get("https://randomuser.me/api/?results=20&nat=us");
+    return axios.get("https://randomuser.me/api/?results=15&nat=us");
 };
 
 export function sortHeading() {

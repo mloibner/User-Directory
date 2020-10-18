@@ -1,7 +1,19 @@
 .table {
-    position: fixed;
-    top: 50%;
-    left: 50%
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    display: table;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 0.5px solid black;
+    padding: 8px;
+  }
+
+th {
+    color: salmon;
 }
 
 .header {
@@ -9,4 +21,21 @@
     font-size: xx-large;
     background-color: salmon;
     padding: 50px;
+}
+
+.searchDiv{
+    padding: 15px;
+    line-height: 100px;
+    font: x-large;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.input {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }

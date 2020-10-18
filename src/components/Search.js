@@ -4,13 +4,8 @@ import React from "react";
 import "./style.css";
 
 export function Search(props) {
-    return <div style={{
-        margin: "20px",
-        position: "fixed",
-        top: "50%",
-        left: "50%"
-    }}>
-        <input type="search" placeholder="Search User" onChange = {
+    return <div className= "searchDiv">
+        <input className="input" type="search" placeholder="Search User" onChange = {
             event => props.handleInputChange(event.target.value)
         }>
 
