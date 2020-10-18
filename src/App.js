@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import {Header} from "./components/Header";
 import {Search} from "./components/Search";
 import {Table} from "./components/Table";
-import { getUsers, sortHeading } from "./utils/api";
+import { getUsers } from "./utils/api";
 
 
 function App() {
@@ -29,13 +29,27 @@ function App() {
     setFilteredUsers(searchedUsers)
   };  
   
+  function handleSortClick() {
+    const filteredUsersCopy = [...filteredUsers]
+        filteredUsersCopy.sort((a, b) => {
+          if (a.name.first <b.name.first) {
+            return -1;
+          } 
+          if (a.name.first > b.name.first) {
+            return 1;
+          }
+          return 0;
+        })
+        setFilteredUsers(filteredUsersCopy);
+      };
+  
   
   //render to browser
   return ( 
     <div>
-      <Header/>
+      <Header />
       <Search handleInputChange = { handleInputChange}/>
-      <Table users = { filteredUsers }/> 
+      <Table users = { filteredUsers } handleSortClick = {handleSortClick}/> 
     </div>
   );
 }

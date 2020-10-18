@@ -2,7 +2,7 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 75px;
+    margin-top: 30px;
     display: table;
     border-collapse: collapse;
 }
@@ -21,6 +21,7 @@ th {
     font-size: xx-large;
     background-color: salmon;
     padding: 50px;
+    margin-bottom: 20px;
 }
 
 .searchDiv{
@@ -34,8 +35,13 @@ th {
 }
 
 .input {
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 1px 10px 5px;
+    text-align: center;
+}
+
+.sortButton {
+    color: salmon;
 }

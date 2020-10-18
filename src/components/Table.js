@@ -7,13 +7,14 @@ export function Table(props) {
     <container style={{textAlign: "center", }}>
     <div>
     <table className="table">
-        <thead><tr>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Email</th>
-            <th>Username</th>
-
-        </tr></thead>
+        <thead>
+            <tr>
+                <th><button className="sortButton">Name</button></th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Username</th>
+            </tr>
+        </thead>
         <tbody>
         { props.users.map((user) => 
                 <tr key={user.id.value}>
